@@ -153,10 +153,10 @@
             if (worktime==='None'){
                 timerElement.textContent = '*^o^*';
                 funConversionElement.textContent = 'Please set your worktime!';
-            }
-            else if (durations==='None'){
-                funConversion2.textContent = 'Please set an alarm!'
-                timerElement2.textContent = '*^o^*';
+                if (durations==='None'){
+                    funConversion2.textContent = 'Please set an alarm!'
+                    timerElement2.textContent = '*^o^*';
+                }
             }
             else if(isWorktime==='False'){
                 startButton.style.display = 'none';
